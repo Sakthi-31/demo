@@ -1,0 +1,17 @@
+{
+    "unitname": "TV",
+    "category": "Smart",
+    "productname": "Sony",
+    "productcode": "SOTV543",
+    "salesstartdate": "12/05/2025",
+    "salesenddate": "30/05/2025",
+    "supportsartdate": "12/05/2025",
+    "supportenddate": "22/05/2025",
+    "unitprice": "800000",
+    "comRate": "15",
+    "qtyordered": "500",
+    "qtyinstock": "200",
+    "recorder": "100",
+    "qtyindemand": "50",
+    "specification": "A terrifying experience unfolded on board an IndiGo flight from Delhi to Srinagar on Wednesday evening when the aircraft was caught in a sudden hailstorm. The flight, carrying 227 passengers."
+}
