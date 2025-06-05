@@ -1,0 +1,24 @@
+{
+    "invoicenumber":"",
+    "subject":"",
+    "relatedto":"",
+    "email":"",
+    "contactnumber":"",
+    "invoicecheckdescription":"",
+    "internalcomments":"",
+    "solutions":"",
+    "caseinvoicenumber":"",
+    "casesubject":"",
+    "caserelatedto":"",
+    "caseemail":"",
+    "casecontactnumber":"",
+    "casedescription":"",
+    "caseinternalcomments":"",
+    "casesolutions":"",
+    "Solutiontitle":"",
+    "question":"",
+    "answer":"",
+    "solutiondescription":""
+    
+
+}

@@ -52,8 +52,8 @@ export default class OpportunityCompany{
             value:"Proposal/Price Quote"
         })
     }
-    async ExpectedRevenue(expectedrevenue :string){
-        await this.page.locator("//input[contains(@class,'form-control ng-dirty')]").fill(expectedrevenue)
+    async ExpectedRevenue(oppexpectedrevenue :string){
+        await this.page.locator("//input[contains(@class,'form-control ng-dirty')]").fill(oppexpectedrevenue)
     }
     async NextStep(nextstep:string){
         await this.page.locator("//input[@placeholder='Enter Next Step']").fill(nextstep)

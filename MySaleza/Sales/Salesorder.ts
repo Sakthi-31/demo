@@ -22,8 +22,8 @@ export default class Salesorder{
             value: " Geetha "
         })
     }
-    async Subject(subject: string) {
-        await this.page.locator("(//input[contains(@class,'form-control ng-untouched')])[1]").fill(subject)
+    async Subject(salessubject: string) {
+        await this.page.locator("(//input[contains(@class,'form-control ng-untouched')])[1]").fill(salessubject)
     }
     async PurchaseOrderNo(purchaseorderno: string) {
         await this.page.locator("(//input[contains(@class,'form-control ng-untouched')])[2]").fill(purchaseorderno)
@@ -31,8 +31,8 @@ export default class Salesorder{
     async CustomerNo(customerno: string) {
         await this.page.locator("(//input[contains(@class,'form-control ng-untouched')])[2]").fill(customerno)
     }
-    async DueDate(duedate: string) {
-        await this.page.locator("//input[contains(@class,'datetimepicker form-control')]").fill(duedate)
+    async DueDate(salesduedate: string) {
+        await this.page.locator("//input[contains(@class,'datetimepicker form-control')]").fill(salesduedate)
     }
     async ContactName() {
         await this.page.click("//div[@class='mat-mdc-select-value ng-tns-c1771602899-279']")
@@ -61,8 +61,8 @@ export default class Salesorder{
             value: "Delivered"
         })
     }
-    async SalesCommision(SalesCommision: string) {
-        await this.page.locator("(//div[@class='input-block']//input)[2]").fill(SalesCommision)
+    async SalesCommision(SOSalesCommision: string) {
+        await this.page.locator("(//div[@class='input-block']//input)[2]").fill(SOSalesCommision)
     }
     async AccountName() {
         await this.page.click("//div[@class='mat-mdc-select-value ng-tns-c1771602899-283']")
@@ -79,7 +79,7 @@ export default class Salesorder{
     async SalesorderState(salesorderstate: string) {
         await this.page.locator("#state").fill(salesorderstate)
     }
-    async SalesorderPincode(salesorderpincode: number) {
+    async SalesorderPincode(salesorderpincode: string) {
         await this.page.locator("#pincode").fill(salesorderpincode.toString())
     }
     async SalesorderCountry(salesordercountry: string) {
@@ -102,7 +102,7 @@ export default class Salesorder{
         await this.page.locator("//div[@id='product_details']//div[3]//div[1]//input[1]").fill(salesorderquantity)
 
     }
-    async SalesorderClickDiscount(salesorderdiscount: number) {
+    async SalesorderClickDiscount(salesorderdiscount: string) {
          await this.page.locator("input[placeholder='Enter Discount'][type='text']").fill(salesorderdiscount.toString())
         await this.page.click("//button[@data-bs-dismiss='modal'][normalize-space()='Create']")
     }

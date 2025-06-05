@@ -58,7 +58,7 @@
     "shard": null,
     "updateSnapshots": "missing",
     "updateSourceMethod": "3way",
-    "version": "1.51.1",
+    "version": "1.52.0",
     "workers": 6,
     "webServer": null
   },
@@ -70,8 +70,8 @@
       "line": 0,
       "specs": [
         {
-          "title": "mainmodule_test_03",
-          "ok": false,
+          "title": "login_test_01",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -82,71 +82,48 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 58967,
-                  "error": {
-                    "message": "Error: locator.fill: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('xpath=(//input[@name=\\'roleName\\'])[1]')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"text\" required=\"\" minlength=\"3\" id=\"role-name\" maxlength=\"15\" name=\"roleName\" pattern=\"^[a-zA-Z\\\\s_]*$\" _ngcontent-ng-c4273261014=\"\" placeholder=\"Enter Role Name\" class=\"form-control ng-untouched ng-pristine ng-invalid\"/>\u001b[22m\n\u001b[2m    - fill(\"Watch\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    104 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m        - element is not visible\u001b[22m\n\u001b[2m      - retrying fill action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
-                    "stack": "Error: locator.fill: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('xpath=(//input[@name=\\'roleName\\'])[1]')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"text\" required=\"\" minlength=\"3\" id=\"role-name\" maxlength=\"15\" name=\"roleName\" pattern=\"^[a-zA-Z\\\\s_]*$\" _ngcontent-ng-c4273261014=\"\" placeholder=\"Enter Role Name\" class=\"form-control ng-untouched ng-pristine ng-invalid\"/>\u001b[22m\n\u001b[2m    - fill(\"Watch\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    104 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m        - element is not visible\u001b[22m\n\u001b[2m      - retrying fill action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at roles.RoleName (C:\\Users\\SAKTHI\\MySaleza\\MainPages\\Roles.ts:15:67)\n    at C:\\Users\\SAKTHI\\MySaleza\\POM\\MySalezapom.ts:38:17",
-                    "location": {
-                      "file": "C:\\Users\\SAKTHI\\MySaleza\\MainPages\\Roles.ts",
-                      "column": 67,
-                      "line": 15
-                    },
-                    "snippet": "\u001b[90m   at \u001b[39mMainPages\\Roles.ts:15\n\n\u001b[0m \u001b[90m 13 |\u001b[39m     }\n \u001b[90m 14 |\u001b[39m     \u001b[36masync\u001b[39m \u001b[33mRoleName\u001b[39m(rolename\u001b[33m:\u001b[39mstring){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"(//input[@name='roleName'])[1]\"\u001b[39m)\u001b[33m.\u001b[39mfill(rolename)\n \u001b[90m    |\u001b[39m                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m     }\n \u001b[90m 17 |\u001b[39m     \u001b[36masync\u001b[39m \u001b[33mChoosePrivilege\u001b[39m(){\n \u001b[90m 18 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mselectOption(\u001b[32m\"(//select[@name='privileges'])[1]\"\u001b[39m\u001b[33m,\u001b[39m[\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\SAKTHI\\MySaleza\\MainPages\\Roles.ts",
-                        "column": 67,
-                        "line": 15
-                      },
-                      "message": "Error: locator.fill: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('xpath=(//input[@name=\\'roleName\\'])[1]')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"text\" required=\"\" minlength=\"3\" id=\"role-name\" maxlength=\"15\" name=\"roleName\" pattern=\"^[a-zA-Z\\\\s_]*$\" _ngcontent-ng-c4273261014=\"\" placeholder=\"Enter Role Name\" class=\"form-control ng-untouched ng-pristine ng-invalid\"/>\u001b[22m\n\u001b[2m    - fill(\"Watch\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    104 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m        - element is not visible\u001b[22m\n\u001b[2m      - retrying fill action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n\u001b[90m   at \u001b[39mMainPages\\Roles.ts:15\n\n\u001b[0m \u001b[90m 13 |\u001b[39m     }\n \u001b[90m 14 |\u001b[39m     \u001b[36masync\u001b[39m \u001b[33mRoleName\u001b[39m(rolename\u001b[33m:\u001b[39mstring){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"(//input[@name='roleName'])[1]\"\u001b[39m)\u001b[33m.\u001b[39mfill(rolename)\n \u001b[90m    |\u001b[39m                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m     }\n \u001b[90m 17 |\u001b[39m     \u001b[36masync\u001b[39m \u001b[33mChoosePrivilege\u001b[39m(){\n \u001b[90m 18 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mselectOption(\u001b[32m\"(//select[@name='privileges'])[1]\"\u001b[39m\u001b[33m,\u001b[39m[\u001b[0m\n\u001b[2m    at roles.RoleName (C:\\Users\\SAKTHI\\MySaleza\\MainPages\\Roles.ts:15:67)\u001b[22m\n\u001b[2m    at C:\\Users\\SAKTHI\\MySaleza\\POM\\MySalezapom.ts:38:17\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 2659,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-17T13:44:21.699Z",
+                  "startTime": "2025-06-04T10:02:59.836Z",
+                  "annotations": [],
                   "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\SAKTHI\\MySaleza\\test-results\\POM-MySalezapom.ts-login-test-01\\test-finished-1.png"
+                    },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\SAKTHI\\MySaleza\\test-results\\POM-MySalezapom.ts-mainmodule-test-03\\video.webm"
-                    },
-                    {
-                      "name": "_prompt-0",
-                      "contentType": "text/markdown",
-                      "body": "IyBJbnN0cnVjdGlvbnMKCi0gRm9sbG93aW5nIFBsYXl3cmlnaHQgdGVzdCBmYWlsZWQuCi0gRXhwbGFpbiB3aHksIGJlIGNvbmNpc2UsIHJlc3BlY3QgUGxheXdyaWdodCBiZXN0IHByYWN0aWNlcy4KLSBQcm92aWRlIGEgc25pcHBldCBvZiBjb2RlIHdpdGggdGhlIGZpeCwgaWYgcG9zc2libGUuCgojIFRlc3QgaW5mbwoKLSBOYW1lOiBtYWlubW9kdWxlX3Rlc3RfMDMKLSBMb2NhdGlvbjogQzpcVXNlcnNcU0FLVEhJXE15U2FsZXphXFBPTVxNeVNhbGV6YXBvbS50czoyMzo1CgojIEVycm9yIGRldGFpbHMKCmBgYApFcnJvcjogbG9jYXRvci5maWxsOiBUYXJnZXQgcGFnZSwgY29udGV4dCBvciBicm93c2VyIGhhcyBiZWVuIGNsb3NlZApDYWxsIGxvZzoKICAtIHdhaXRpbmcgZm9yIGxvY2F0b3IoJ3hwYXRoPSgvL2lucHV0W0BuYW1lPVwncm9sZU5hbWVcJ10pWzFdJykKICAgIC0gbG9jYXRvciByZXNvbHZlZCB0byA8aW5wdXQgdHlwZT0idGV4dCIgcmVxdWlyZWQ9IiIgbWlubGVuZ3RoPSIzIiBpZD0icm9sZS1uYW1lIiBtYXhsZW5ndGg9IjE1IiBuYW1lPSJyb2xlTmFtZSIgcGF0dGVybj0iXlthLXpBLVpcXHNfXSokIiBfbmdjb250ZW50LW5nLWM0MjczMjYxMDE0PSIiIHBsYWNlaG9sZGVyPSJFbnRlciBSb2xlIE5hbWUiIGNsYXNzPSJmb3JtLWNvbnRyb2wgbmctdW50b3VjaGVkIG5nLXByaXN0aW5lIG5nLWludmFsaWQiLz4KICAgIC0gZmlsbCgiV2F0Y2giKQogIC0gYXR0ZW1wdGluZyBmaWxsIGFjdGlvbgogICAgMiDDlyB3YWl0aW5nIGZvciBlbGVtZW50IHRvIGJlIHZpc2libGUsIGVuYWJsZWQgYW5kIGVkaXRhYmxlCiAgICAgIC0gZWxlbWVudCBpcyBub3QgdmlzaWJsZQogICAgLSByZXRyeWluZyBmaWxsIGFjdGlvbgogICAgLSB3YWl0aW5nIDIwbXMKICAgIDIgw5cgd2FpdGluZyBmb3IgZWxlbWVudCB0byBiZSB2aXNpYmxlLCBlbmFibGVkIGFuZCBlZGl0YWJsZQogICAgICAtIGVsZW1lbnQgaXMgbm90IHZpc2libGUKICAgIC0gcmV0cnlpbmcgZmlsbCBhY3Rpb24KICAgICAgLSB3YWl0aW5nIDEwMG1zCiAgICAxMDQgw5cgd2FpdGluZyBmb3IgZWxlbWVudCB0byBiZSB2aXNpYmxlLCBlbmFibGVkIGFuZCBlZGl0YWJsZQogICAgICAgIC0gZWxlbWVudCBpcyBub3QgdmlzaWJsZQogICAgICAtIHJldHJ5aW5nIGZpbGwgYWN0aW9uCiAgICAgICAgLSB3YWl0aW5nIDUwMG1zCgogICAgYXQgcm9sZXMuUm9sZU5hbWUgKEM6XFVzZXJzXFNBS1RISVxNeVNhbGV6YVxNYWluUGFnZXNcUm9sZXMudHM6MTU6NjcpCiAgICBhdCBDOlxVc2Vyc1xTQUtUSElcTXlTYWxlemFcUE9NXE15U2FsZXphcG9tLnRzOjM4OjE3CmBgYAoKIyBUZXN0IHNvdXJjZQoKYGBgdHMKICAgMSB8IGltcG9ydCB7IFBhZ2UgfSBmcm9tICJAcGxheXdyaWdodC90ZXN0IjsKICAgMiB8CiAgIDMgfAogICA0IHwgZXhwb3J0IGRlZmF1bHQgY2xhc3Mgcm9sZXN7CiAgIDUgfAogICA2IHwgICAgIGNvbnN0cnVjdG9yKHB1YmxpYyBwYWdlOlBhZ2Upe30KICAgNyB8CiAgIDggfCAgICAgYXN5bmMgQ2xpY2tSb2xlcygpewogICA5IHwgICAgICAgICBhd2FpdCB0aGlzLnBhZ2UuY2xpY2soIidNYW5hZ2UgUm9sZXMnIikKICAxMCB8ICAgICB9CiAgMTEgfCAgICAgYXN5bmMgQ2xpY2tBZGRSb2xlcygpewogIDEyIHwgICAgICAgICBhd2FpdCB0aGlzLnBhZ2UuY2xpY2soIi8vYVtAaHJlZj0nIy9yb2xlJ10iKQogIDEzIHwgICAgIH0KICAxNCB8ICAgICBhc3luYyBSb2xlTmFtZShyb2xlbmFtZTpzdHJpbmcpewo+IDE1IHwgICAgICAgICBhd2FpdCB0aGlzLnBhZ2UubG9jYXRvcigiKC8vaW5wdXRbQG5hbWU9J3JvbGVOYW1lJ10pWzFdIikuZmlsbChyb2xlbmFtZSkKICAgICB8ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIF4gRXJyb3I6IGxvY2F0b3IuZmlsbDogVGFyZ2V0IHBhZ2UsIGNvbnRleHQgb3IgYnJvd3NlciBoYXMgYmVlbiBjbG9zZWQKICAxNiB8ICAgICB9CiAgMTcgfCAgICAgYXN5bmMgQ2hvb3NlUHJpdmlsZWdlKCl7CiAgMTggfCAgICAgICAgIGF3YWl0IHRoaXMucGFnZS5zZWxlY3RPcHRpb24oIigvL3NlbGVjdFtAbmFtZT0ncHJpdmlsZWdlcyddKVsxXSIsWwogIDE5IHwgICAgICAgICAgICAgewogIDIwIHwgICAgICAgICAgICAgICAgIGxhYmVsOiIgSW5zdGFudCAiCiAgMjEgfCAgICAgICAgICAgICB9LHsKICAyMiB8ICAgICAgICAgICAgICAgICBpbmRleDoxCiAgMjMgfCAgICAgICAgICAgICB9CiAgMjQgfCAgICAgICAgIF0pCiAgMjUgfCAgICAgfQogIDI2IHwgICAgIGFzeW5jIFJvbGVTdW1iaXQoKXsKICAyNyB8ICAgICAgICAgYXdhaXQgdGhpcy5wYWdlLmNsaWNrKCIoLy9idXR0b25bY29udGFpbnMoQGNsYXNzLCdidG4gYnRuLXByaW1hcnknKV0pWzFdIikKICAyOCB8ICAgICB9CiAgMjkgfAogIDMwIHwgfQpgYGA="
+                      "path": "C:\\Users\\SAKTHI\\MySaleza\\test-results\\POM-MySalezapom.ts-login-test-01\\video.webm"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\SAKTHI\\MySaleza\\MainPages\\Roles.ts",
-                    "column": 67,
-                    "line": 15
-                  }
+                  ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "eb9cf4ede7d2c4a46aba-1411714d28e3620ed7c2",
+          "id": "eb9cf4ede7d2c4a46aba-27647ca89ae98bd682f8",
           "file": "POM/MySalezapom.ts",
-          "line": 23,
-          "column": 5
+          "line": 9,
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-04-17T13:44:19.565Z",
-    "duration": 61846.25499999896,
-    "expected": 0,
+    "startTime": "2025-06-04T10:02:55.730Z",
+    "duration": 7549.152999999991,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }

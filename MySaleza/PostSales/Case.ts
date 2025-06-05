@@ -1,6 +1,6 @@
 import { Page } from "@playwright/test";
 
-export default class Case{
+export default class CreateCase{
 
     constructor(public page:Page){}
 
@@ -10,7 +10,7 @@ export default class Case{
      async ClickAddCase(){
         await this.page.click("//button[text()='Add Case']")
     }
-    async CaseInvoiceNumber(caseinvoicenumber:number){
+    async CaseInvoiceNumber(caseinvoicenumber:string){
         await this.page.locator("#mat-input-41").fill(caseinvoicenumber.toString())
     }
     async SearchInvoice(){
@@ -79,7 +79,7 @@ export default class Case{
     async CaseEmail(caseemail:string){
         await this.page.locator("#mat-input-46").fill(caseemail)
     }
-    async CaseContactNumber(casecontactnumber:number){
+    async CaseContactNumber(casecontactnumber:string){
         await this.page.locator("#mat-input-47").fill(casecontactnumber.toString())
     }
     async CaseDescription(casedescription:string){
