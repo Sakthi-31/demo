@@ -16,8 +16,8 @@ export default class Quotations {
             value: " thangavel "
         })
     }
-    async Subject(subject: string) {
-        await this.page.locator("//input[@id='subject']").fill(subject)
+    async Subject(quosubject: string) {
+        await this.page.locator("//input[@id='subject']").fill(quosubject)
     }
     async ContactName() {
         await this.page.click("#mat-select-value-3")
@@ -37,8 +37,8 @@ export default class Quotations {
             value: " Sathyam Software Solutions "
         })
     }
-    async DueDate(duedate: string) {
-        await this.page.locator("#dueDate").fill(duedate)
+    async DueDate(queduedate: string) {
+        await this.page.locator("#dueDate").fill(queduedate)
     }
     async QuotesStage() {
         await this.page.click("#mat-select-value-9")
@@ -61,7 +61,7 @@ export default class Quotations {
     async QuotationsState(quotationsstate: string) {
         await this.page.locator("//input[@id='state']").fill(quotationsstate)
     }
-    async QuotationsPincode(quotationspincode: number) {
+    async QuotationsPincode(quotationspincode: string) {
         await this.page.locator("//input[@id='pincode']").fill(quotationspincode.toString())
     }
     async QuotationsCountry(quotationscountry: string) {
@@ -84,7 +84,7 @@ export default class Quotations {
         await this.page.locator("//div[@id='product_details']//div[3]//div[1]//input[1]").fill(quotationsquantity)
 
     }
-    async QuotationsClickDiscount(quotationsdiscount: number) {
+    async QuotationsClickDiscount(quotationsdiscount: string) {
         await this.page.locator("input[placeholder='Enter Discount'][type='text']").fill(quotationsdiscount.toString())
         await this.page.click("//button[@data-bs-dismiss='modal'][normalize-space()='Create']")
     }

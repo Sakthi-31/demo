@@ -58,7 +58,7 @@ export default class Invoice{
     async InvoiceState(invoicestate: string) {
         await this.page.locator("//input[@formcontrolname='state']").fill(invoicestate)
     }
-    async InvoicePincode(invoicepincode: number) {
+    async InvoicePincode(invoicepincode: string) {
         await this.page.locator("//input[@formcontrolname='pincode']").fill(invoicepincode.toString())
     }
     async InvoiceCountry(invoicecountry: string) {
@@ -81,7 +81,7 @@ export default class Invoice{
         await this.page.locator("//input[@formcontrolname='quantity']").fill(invoicequantity)
 
     }
-    async InvoiceClickDiscount(invoicediscount: number) {
+    async InvoiceClickDiscount(invoicediscount: string) {
         await this.page.locator("//input[@formcontrolname='discount']").fill(invoicediscount.toString())
         await this.page.click("(//button[contains(@class,'btn btn-primary')])[3]")
     }

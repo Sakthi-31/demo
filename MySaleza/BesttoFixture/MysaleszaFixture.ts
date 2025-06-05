@@ -17,7 +17,19 @@ import account from "../PreSales/Account"
 import contact from "../PreSales/Contacts"
 import opportunitycompany from "../PreSales/Opportunity/Company"
 import opportunityindividual from "../PreSales/Opportunity/Individual"
-
+import Invoice from "../Sales/Invoice"
+import Quotations from "../Sales/Quotations"
+import Salesorder from "../Sales/Salesorder"
+import invoicecheck from "../PostSales/InvoiceCheck"
+import solution from "../PostSales/Solution"
+import CreateCase from "../PostSales/Case"
+import Task from "../TaskManagement/Task"
+import WorkItem from "../TaskManagement/WorkItem"
+import SLA from "../TaskManagement/Sla"
+import Skills from "../TaskManagement/Skills"
+import WorkItemSkills from "../TaskManagement/WorkItemSkills"
+import EntityManagement from "../TaskManagement/EntityManagement"
+import WorkItemSLA from "../TaskManagement/WorkItemSLA"
 
 
 
@@ -40,6 +52,19 @@ type pages ={
     contact:contact
     opportunitycompany:opportunitycompany
     opportunityindividual:opportunityindividual
+    invoice:Invoice
+    quotation:Quotations
+    salesorder:Salesorder
+    invoicecheck:invoicecheck
+    createcase:CreateCase
+    solution:solution
+    task:Task
+    workitem:WorkItem
+    sla:SLA
+    skills:Skills
+    workitemskills:WorkItemSkills
+    entitymanagement:EntityManagement
+    workitemsla:WorkItemSLA
 
 }
 
@@ -83,7 +108,34 @@ const testmysaleza=base.extend<pages>({
         await use(new opportunitycompany(page))
     },opportunityindividual:async({page},use)=>{
         await use(new opportunityindividual(page))
+    },invoice:async({page},use)=>{
+        await use(new Invoice(page))
+    },quotation:async({page},use)=>{
+        await use(new Quotations(page))
+    },salesorder:async({page},use)=>{
+        await use(new Salesorder(page))
+    },invoicecheck:async({page},use)=>{
+        await use(new invoicecheck(page))
+    },createcase:async({page},use)=>{
+        await use(new CreateCase(page))
+    },solution:async({page},use)=>{
+        await use(new solution(page))
+    },task:async({page},use)=>{
+        await use(new Task(page))
+    },workitem:async({page},use)=>{
+        await use(new WorkItem(page))
+    },sla:async({page},use)=>{
+        await use(new SLA(page))
+    },skills:async({page},use)=>{
+        await use(new Skills(page))
+    },workitemskills:async({page},use)=>{
+        await use(new WorkItemSkills(page))
+    },entitymanagement:async({page},use)=>{
+        await use(new EntityManagement(page))
+    },workitemsla:async({page},use)=>{
+        await use(new WorkItemSLA(page))
     }
+
     
 
 
