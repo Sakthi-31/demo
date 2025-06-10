@@ -7,7 +7,7 @@ export default class InvoiceCheck{
     async ClickInvoiceCheck(){
         await this.page.click("//span[text()='Invoice-Check']")
     }
-    async InvoiceNumber(invoicenumber:number){
+    async InvoiceNumber(invoicenumber:string ){
         await this.page.locator("#mat-input-15").fill(invoicenumber.toString())
     }
     async SearchInvoice(){
@@ -80,16 +80,16 @@ export default class InvoiceCheck{
     async Email(email:string){
         await this.page.locator("#mat-input-15").fill(email)
     }
-    async ContactNumber(contactnumber:number){
+    async ContactNumber(contactnumber:string){
         await this.page.locator("#mat-input-16").fill(contactnumber.toString())
     }
     async InvoiceCheckDescription(invoicecheckdescription:string){
         await this.page.locator("(//textarea[contains(@class,'form-control ng-untouched')])[1]").fill(invoicecheckdescription)
     }
-    async InternalComments(internalcomments:number){
+    async InternalComments(internalcomments:string){
         await this.page.locator("#mat-input-17").fill(internalcomments.toString())
     }
-    async Solutions(solutions:number){
+    async Solutions(solutions:string){
         await this.page.locator("//textarea[@placeholder='Enter Solutions']").fill(solutions.toString())
     }
     async CreateCaseInInvoiceCheck(){
